@@ -93,10 +93,29 @@ body {
     color: #000000;
     font-size: .5em;
 
-    box-shadow: 0 2px 5px red ;
+    box-shadow: 0 2px 5px red ; /*fix shadow*/
 }
 
 .button-pink {
     background-color: var(--clr-primary-1);
     color: #ffffff;
 }
+
+/* add button active/press efect */
+
+/* content */
+
+.content {
+
+    display: grid;
+    row-gap: 2em;
+    grid-template-areas: 
+    'b2'
+    'b1'
+    'b4'
+    'b3'
+    'b6'
+    'b5'
+    'b7';
+}
+
