@@ -1,0 +1,102 @@
+:root {
+    --clr-primary-1:hsl(322, 100%, 66%);
+    --clr-neutral-1:hsl(193, 100%, 96%);
+    --clr-neutral-2:hsl(192, 100%, 9%);
+    --clr-neutral-3:hsl(208, 11%, 55%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.p-align {
+    text-align: center;
+}
+
+/* header */
+
+.header {
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--clr-neutral-1);
+    padding: 2em 1em 2em 1em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1fr 1fr;
+    row-gap: 1em;
+    grid-template-areas: 
+    'lg lg .. .. b1 b1'
+    '.. .. .. .. .. ..'
+    'h1 h1 h1 h1 h1 h1'
+    'hp hp hp hp hp hp'
+    '.. b2 b2 b2 b2 ..'
+    '.. .. .. .. .. ..'
+    'he he he he he he';
+}
+
+.main-logo {
+    grid-area: lg;
+}
+
+.main-logo-img {
+    width: 100%;
+}
+
+.button1 {
+    grid-area: b1;
+}
+
+.heading-main {
+    grid-area: h1;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+.header-p {
+    grid-area: hp;
+}
+
+.button2 {
+    grid-area: b2;
+}
+
+.hero-img {
+    grid-area: he;
+    width: 100%;
+}
+
+/* buttons */
+
+.button {
+    text-decoration: none;
+    padding: .25em 2em;
+    margin: auto;
+    text-align: center;
+    border-radius: 2em;
+}
+
+.button-white {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: .5em;
+
+    box-shadow: 0 2px 5px red ;
+}
+
+.button-pink {
+    background-color: var(--clr-primary-1);
+    color: #ffffff;
+}
