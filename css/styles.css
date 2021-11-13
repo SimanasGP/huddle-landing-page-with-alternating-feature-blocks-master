@@ -261,21 +261,41 @@ body {
     padding-top: 1em;
 }
 
+.footer-link:hover,
+.footer-link:focus {
+    text-decoration: underline;
+    transition: all 0.2s linear;
+}
+
 .footer-social-medias {
     grid-area: sm;
     display: flex;
     margin: auto; 
+    position: relative;
 }
 
 .footer-social-media {
+    text-decoration: none;
+    color: #ffffff;
     box-sizing: content-box;
-    filter: brightness(0) invert(1);
     height: 1em;
     width: 1em;
     margin: 0 .5em;
     border: #ffffff 1px solid;
     border-radius: 50%;
-    padding: .25em;
+    padding: .5em;
+
+    text-align: center;
+    display: flex;
+    
+    vertical-align: middle;
+}
+
+.footer-social-media:hover,
+.footer-social-media:focus {
+    color: var(--clr-primary-1);
+    border: var(--clr-primary-1) 1px solid;
+    transition: all 0.2s linear;
 }
 
 .copyright {
@@ -295,8 +315,6 @@ body {
     text-align: center;
     font-size: .5em;
 }
-
-/* add footer hover efects */
 
 /* @ medias */
 
