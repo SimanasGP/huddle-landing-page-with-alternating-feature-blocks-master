@@ -29,10 +29,11 @@ body {
 
 .header {
     background-image: url(../images/bg-hero-mobile.svg);
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: var(--clr-neutral-1);
-    padding: 2em 1em 2em 1em;
+    padding: 1.5em 1em 2em 1em;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1fr 1fr;
@@ -84,42 +85,46 @@ body {
 .button {
     text-decoration: none;
     font-weight: 700;
-    padding: .25em 2em;
     margin: auto;
     text-align: center;
-    border-radius: 2em;
+    border-radius: 3em;
     
 }
 
 .button-white {
     background-color: #ffffff;
     color: #000000;
-    font-size: .5em;
+    
 }
 
 .button-pink {
     background-color: var(--clr-primary-1);
     color: #ffffff;
-    font-size: .75em;
+    
 }
 
 .button1
 {
+    font-size: .5em;
     box-shadow: 0 .05em .2em lightgray;
+    padding: .5em 2.5em;
 }
 
 .button2 {
+    font-size: .75em;
     box-shadow: .2em .2em .4em pink;
-    padding: .25em 3em;
+    padding: .75em 3.5em;
 }
 
 .button3 {
+    font-size: .5em;
     box-shadow: 0 .2em .2em var(--clr-neutral-1);
+    padding: 1.5em 7em;
 }
 
 .button:hover,
 .button:focus {
-    opacity: .5;
+    opacity: .75;
     transition: all 0.2s linear;
 }
 
@@ -129,6 +134,7 @@ body {
     /* padding: 0 2em; */
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .content-card {
@@ -163,19 +169,22 @@ body {
 
 .content-card4 {
     margin: 0 .75em;
-
     text-align: center;
     background-color: #ffffff;
     border-radius: .75em;
-    padding: 0 0 3em 0;
+    padding-bottom:3em;
 
     position: relative;
     top: 4em;
 }
 
+.box4 {
+    margin: auto;
+}
+
 .heading-tertiary {
     font-size: 1em;
-    padding: 2em 0 2em 0;
+    padding: 2em 1em 2em 1em;
 }
 
 
@@ -328,6 +337,24 @@ body {
         text-align: left;
     }
 
+    /* buttons */
+
+    .button1
+{
+    font-size: .75em;
+    padding: 1em 4em;
+}
+
+.button2 {
+    font-size: .75em;
+    padding: 1em 5em;
+}
+
+.button3 {
+    font-size: 1em;
+    padding: 1.5em 7em;
+}
+
     /* content */
 
     .header {
@@ -341,10 +368,6 @@ body {
         'b2 b2 .. he he he'
         '.. .. .. he he he';
     }
-    
-    .button1 {
-        /* fix buttons */
-    }
 
     .heading-main {
         font-size: 2.5em;
@@ -353,10 +376,6 @@ body {
     
     .header-p {
         padding-right: 4em;
-    }
-    
-    .button2 {
-        /* fix buttons */
     }
 
     .content-card {
@@ -393,11 +412,14 @@ body {
     }
 
     .content-card4 {
-        margin: 0 20em;
+        max-width: 50em;
+        width: 100%;
+        padding-bottom: 4em;
+        top: 6em;
     }
     
     .heading-tertiary {
-        font-size: 1.5em;
+        font-size: 2em;
         padding: 2em 0 1em 0;
     }
 
